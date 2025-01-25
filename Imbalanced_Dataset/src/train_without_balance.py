@@ -3,22 +3,22 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
 
 def train_without_balance(data):
-    # Separar características y la variable objetivo
+    # Separate features and target variable
     X = data.drop(columns=["Class"])
     y = data["Class"]
 
-    # Dividir los datos en conjuntos de entrenamiento y prueba
+    # Split the data into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.3, random_state=42
     )
 
-    # Entrenar el modelo
-    model = LogisticRegression()
+    # Training the model
+    model = LogisticRegression(max_iter=1500)
     model.fit(X_train, y_train)
 
-    # Predicción y evaluación
+    # Prediction and evaluation
     y_pred = model.predict(X_test)
-    print("Reporte de clasificación (modelo desbalanceado):")
+    print("Report of classification (imbalanced model):")
     print(classification_report(y_test, y_pred))
 
     return model
