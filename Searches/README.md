@@ -1,4 +1,4 @@
-# 🔍 Searches - AI University Project  
+# 🔍 Searches  
 
 This directory contains two Python scripts that implement search algorithms for problem-solving in grid-based environments.
 
