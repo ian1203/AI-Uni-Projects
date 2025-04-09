@@ -98,14 +98,6 @@ To avoid overfitting in decision trees, you can:
 
 ---
 
-## 📌 Notes
-
-- All models were built using **PyTorch** (no TensorFlow required).
-- The CNN and RNN are relatively simple to meet assignment requirements but can be extended easily.
-- NLTK was removed in the final RNN version to avoid tokenizer issues.
-
----
-
 ## 📚 Author
 
 **Ian Vicente**  
